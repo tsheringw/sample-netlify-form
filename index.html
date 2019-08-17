@@ -20,10 +20,12 @@
           <div class="card-body">
             <h3>Sign up Today</h3>
             <p>Please fill out the form to Register</p>
-            <form method="POST" data-netlify="true">
+            <form action="POST" data-netlify="true">
               <div class="form-group">
                 <input
                   type="text"
+                  name="fname"
+                  id="fname"
                   class="form-control"
                   placeholder="First Name"
                 />
@@ -31,16 +33,26 @@
               <div class="form-group">
                 <input
                   type="text"
+                  name="lname"
+                  id="lname"
                   class="form-control"
                   placeholder="Last Name"
                 />
               </div>
               <div class="form-group">
-                <input type="email" class="form-control" placeholder="Email" />
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Email"
+                />
               </div>
               <div class="form-group">
                 <input
                   type="password"
+                  name="password"
+                  id="password"
                   class="form-control"
                   placeholder="Password"
                 />
@@ -48,6 +60,8 @@
               <div class="form-group">
                 <input
                   type="password"
+                  name="cpassword"
+                  id="cpassword"
                   class="form-control"
                   placeholder="Confirm Password"
                 />
